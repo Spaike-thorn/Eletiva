@@ -11,7 +11,7 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #0f172a;
+            background-color: #0f172a; 
             color: #f8fafc;
             overflow-x: hidden;
         }
@@ -189,8 +189,8 @@
             </div>
             
             <div class="mt-8 text-center">
-                 <button onclick="window.location.href='https://spaike-thorn.github.io/Eletiva/'" class="text-sm text-gray-500 hover:text-white transition-colors underline">
-                    <i class="fas fa-users mr-1"></i>conheça nosso trabalho
+                 <button onclick="window.location.href='index1.html' "class="text-sm text-gray-500 hover:text-white transition-colors underline">
+                    <i class="fas fa-users mr-1"></i> conheça nosso trabalho
                  </button>
             </div>
         </div>
@@ -198,8 +198,7 @@
     </main>
 
     <div id="detail-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4 transition-opacity duration-300 opacity-0">
-        <div class="bg-[#1e293b] w-full max-w-2xl rounded-2xl border border-white/10 shadow-2xl overflow-hidden transform scale-95 transition-transform duration-300" id="modal-content-box">
-
+        <div class="bg-[#1e293b] w-full max-w-2xl rounded-2xl border border-white/10 shadow-2xl overflow-hidden transform scale-95 transition-transform duration-300" id="modal-content-box"
             <div id="modal-header" class="h-32 md:h-40 bg-gradient-to-r from-purple-600 to-indigo-600 p-6 flex items-end justify-between relative">
                 <button onclick="closeModal()" class="absolute top-4 right-4 w-8 h-8 bg-black/20 hover:bg-black/40 rounded-full text-white flex items-center justify-center transition-colors">
                     <i class="fas fa-times"></i>
@@ -236,7 +235,6 @@
     </div>
 
     <script>
-
         const musicStyles = [
             {
                 id: 'classica',
@@ -320,7 +318,6 @@
             }
         ];
 
-
         let currentSlide = 0;
         const totalSlides = 3;
 
@@ -345,7 +342,7 @@
 
         function nextSlide() {
             document.getElementById(`slide-${currentSlide}`).classList.add('hidden');
-
+            
             currentSlide++;
             
             if (currentSlide < totalSlides) {
@@ -435,7 +432,6 @@
             }, 300); 
         }
 
-
         modal.addEventListener('click', (e) => {
             if (e.target === modal) closeModal();
         });
@@ -443,6 +439,4 @@
         updateDots();
     </script>
 </body>
-
 </html>
-
