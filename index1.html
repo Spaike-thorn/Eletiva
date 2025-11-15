@@ -15,6 +15,7 @@
             color: #f8fafc;
             overflow-x: hidden;
         }
+        
         .bg-animated {
             background: linear-gradient(-45deg, #0f172a, #1e1b4b, #312e81, #111827);
             background-size: 400% 400%;
@@ -32,12 +33,14 @@
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
+
         .glass {
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         }
+
         .slide-up {
             animation: slideUp 0.6s ease-out forwards;
         }
@@ -48,9 +51,13 @@
     </style>
 </head>
 <body class="min-h-screen flex flex-col">
+
     <div class="bg-animated"></div>
+
     <main class="flex-grow w-full max-w-5xl mx-auto px-4 py-12 md:py-16">
+        
         <div class="relative text-center mb-10 md:mb-12 slide-up">
+
             <a href="index.html" class="absolute left-0 top-1 text-sm text-gray-400 hover:text-white transition-colors">
                 <i class="fas fa-chevron-left mr-2"></i> Voltar ao Início
             </a>
@@ -58,7 +65,9 @@
             <h1 class="text-3xl md:text-5xl font-extrabold text-white mb-2">Nosso Trabalho</h1>
             <p class="text-lg text-gray-400">Um resumo da nossa jornada na eletiva.</p>
         </div>
+
         <div class="w-full slide-up" style="animation-delay: 0.2s">
+            
             <div class="flex border-b border-white/10 mb-6">
                 <button id="tab-button-0" onclick="showTab(0)" class="tab-button text-sm md:text-base font-semibold px-4 py-3 text-white border-b-2 border-purple-400 transition-colors">
                     <i class="fas fa-lightbulb mr-2 opacity-80"></i> O que aprendemos?
@@ -70,7 +79,9 @@
                     <i class="fas fa-camera-retro mr-2 opacity-80"></i> Ensaios
                 </button>
             </div>
+
             <div class="w-full">
+                
                 <div id="tab-content-0" class="tab-content glass p-6 md:p-8 rounded-2xl">
                     <h2 class="text-2xl font-bold mb-4">O que aprendemos?</h2>
                     <p class="text-gray-300 leading-relaxed">
@@ -84,6 +95,7 @@
                         <li>A história por trás dos estilos musicais que vimos.</li>
                     </ul>
                 </div>
+
                 <div id="tab-content-1" class="tab-content glass p-6 md:p-8 rounded-2xl hidden">
                     <h2 class="text-2xl font-bold mb-4">Trabalho da Eletiva</h2>
                     <p class="text-gray-300 leading-relaxed mb-4">
@@ -94,6 +106,7 @@
                     </div>
                     <p class="text-sm text-gray-400 mt-2 text-center"><i>(Aqui você pode substituir o link do YouTube pelo vídeo do trabalho)</i></p>
                 </div>
+
                 <div id="tab-content-2" class="tab-content glass p-6 md:p-8 rounded-2xl hidden">
                     <h2 class="text-2xl font-bold mb-4">Ensaios (Bastidores)</h2>
                     <p class="text-gray-300 leading-relaxed mb-6">
@@ -126,7 +139,7 @@
             for (let i = 0; i < totalTabs; i++) {
                 document.getElementById(`tab-content-${i}`).classList.add('hidden');
             }
-        
+            
             const buttons = document.querySelectorAll('.tab-button');
             buttons.forEach(btn => {
                 btn.classList.remove('text-white', 'border-purple-400');
@@ -141,5 +154,4 @@
         }
     </script>
 </body>
-
 </html>
