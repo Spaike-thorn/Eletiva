@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -49,6 +50,8 @@
             to { opacity: 1; transform: translateY(0); }
         }
     </style>
+
+
 </head>
 <body class="min-h-screen flex flex-col">
 
@@ -59,7 +62,7 @@
         <div class="relative text-center mb-10 md:mb-12 slide-up">
 
             <a href="index.html" class="absolute left-0 top-1 text-sm text-gray-400 hover:text-white transition-colors">
-                <i class="fas fa-chevron-left mr-2"></i> Voltar ao Início
+                <i class="fas fa-chevron-left mr-2"></i>Voltar
             </a>
             
             <h1 class="text-3xl md:text-5xl font-extrabold text-white mb-2">Nosso Trabalho</h1>
@@ -73,10 +76,10 @@
                     <i class="fas fa-lightbulb mr-2 opacity-80"></i> O que aprendemos?
                 </button>
                 <button id="tab-button-1" onclick="showTab(1)" class="tab-button text-sm md:text-base font-semibold px-4 py-3 text-gray-400 border-b-2 border-transparent hover:text-white transition-colors">
-                    <i class="fas fa-palette mr-2 opacity-80"></i> Trabalho da Eletiva
+                    <i class="fas fa-palette mr-2 opacity-80"></i> Video
                 </button>
                 <button id="tab-button-2" onclick="showTab(2)" class="tab-button text-sm md:text-base font-semibold px-4 py-3 text-gray-400 border-b-2 border-transparent hover:text-white transition-colors">
-                    <i class="fas fa-camera-retro mr-2 opacity-80"></i> Ensaios
+                    <i class="fas fa-camera-retro mr-2 opacity-80"></i> Fotos
                 </button>
             </div>
 
@@ -85,70 +88,86 @@
                 <div id="tab-content-0" class="tab-content glass p-6 md:p-8 rounded-2xl">
                     <h2 class="text-2xl font-bold mb-4">O que aprendemos?</h2>
                     <p class="text-gray-300 leading-relaxed">
-                        Aqui você pode escrever sobre as conexões que os alunos fizeram entre Geografia, Biologia e Música. 
+                        aprendemos como é a música em determinadas regiões diferentes pelo mundo
                         <br><br>
-                        Por exemplo:
+                        exploramos diversos estilos diferentes
                     </p>
                     <ul class="list-disc list-inside mt-4 text-gray-300 space-y-2">
-                        <li>Como o som é produzido (física/biologia).</li>
-                        <li>Como a geografia de um local (clima, relevo) influencia os instrumentos e ritmos.</li>
-                        <li>A história por trás dos estilos musicais que vimos.</li>
+                        <li>Aprofundamos no conceito musical.</li>
+                        <li>Fizemos diversos trabalhos sobre os estilos musicais.</li>
+                        <li>Exploramos a ciência por traz da música.</li>
+                        <li>Aprendemos diversas curiosidades sobre a música<./li>
+                        <li>Vimos exemplos de grandes compositores.</li>
                     </ul>
                 </div>
 
                 <div id="tab-content-1" class="tab-content glass p-6 md:p-8 rounded-2xl hidden">
-                    <h2 class="text-2xl font-bold mb-4">Trabalho da Eletiva</h2>
+                    <h2 class="text-2xl font-bold mb-4">Um curto video</h2>
                     <p class="text-gray-300 leading-relaxed mb-4">
-                        Este é o espaço para mostrar o resultado final. Pode ser um vídeo, um áudio, ou fotos do projeto que os alunos criaram.
+                        Aqui terá um video de uma apresentação de Rap
                     </p>
                     <div class="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden border border-white/10">
-                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full"></iframe>
+                       <iframe src="https://www.youtube.com/embed/f4KYu0le5M4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full"></iframe>
                     </div>
-                    <p class="text-sm text-gray-400 mt-2 text-center"><i>(Aqui você pode substituir o link do YouTube pelo vídeo do trabalho)</i></p>
+                    <p class="text-sm text-gray-400 mt-2 text-center"><a href="https://www.youtube.com/embed/f4KYu0le5M4">Link aqui ou no video acima</a></p>
                 </div>
 
                 <div id="tab-content-2" class="tab-content glass p-6 md:p-8 rounded-2xl hidden">
                     <h2 class="text-2xl font-bold mb-4">Ensaios (Bastidores)</h2>
                     <p class="text-gray-300 leading-relaxed mb-6">
-                        Uma galeria de fotos ou vídeos curtos mostrando o processo de criação, os ensaios, os erros e acertos.
+                        Algumas fotos de como foi nossa experiencia 
                     </p>
                     <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
                         <div class="bg-slate-700 aspect-square rounded-lg flex items-center justify-center text-gray-400">
-                            <i class="fas fa-image text-4xl"></i>
+                            <img src="gu.jpg" alt="description">
                         </div>
                         <div class="bg-slate-700 aspect-square rounded-lg flex items-center justify-center text-gray-400">
-                            <i class="fas fa-image text-4xl"></i>
+                            <img src="bum.jpg" alt="description">
                         </div>
                         <div class="bg-slate-700 aspect-square rounded-lg flex items-center justify-center text-gray-400">
-                            <i class="fas fa-image text-4xl"></i>
+                            <img src="afro.jpg" alt="description">
                         </div>
                         <div class="bg-slate-700 aspect-square rounded-lg flex items-center justify-center text-gray-400">
-                            <i class="fas fa-image text-4xl"></i>
-                            <img src="lia.jpg" alt="lia sorrindo">
+                            <img src="latinos.jpg" alt="description">
+                        </div>
+                         <div class="bg-slate-700 aspect-square rounded-lg flex items-center justify-center text-gray-400">
+                            <img src="lemos.jpg" alt="description">
+                        </div>
+                         <div class="bg-slate-700 aspect-square rounded-lg flex items-center justify-center text-gray-400">
+                            <img src="pras.jpg" alt="description">
+                        </div>
+                         <div class="bg-slate-700 aspect-square rounded-lg flex items-center justify-center text-gray-400">
+                            <img src="rap.jpg" alt="description">
+                        </div>
+                         <div class="bg-slate-700 aspect-square rounded-lg flex items-center justify-center text-gray-400">
+                            <img src="reggae.jpg" alt="description">
+                        </div>
+                         <div class="bg-slate-700 aspect-square rounded-lg flex items-center justify-center text-gray-400">
+                            <img src="rok.jpg" alt="description">
+                        </div>
+                         <div class="bg-slate-700 aspect-square rounded-lg flex items-center justify-center text-gray-400">
+                            <img src="vi.jpg" alt="description">
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </main>
 
+
+
     <script>
         const totalTabs = 3;
-
         function showTab(tabIndex) {
             for (let i = 0; i < totalTabs; i++) {
                 document.getElementById(`tab-content-${i}`).classList.add('hidden');
             }
-            
             const buttons = document.querySelectorAll('.tab-button');
             buttons.forEach(btn => {
                 btn.classList.remove('text-white', 'border-purple-400');
                 btn.classList.add('text-gray-400', 'border-transparent');
             });
-
             document.getElementById(`tab-content-${tabIndex}`).classList.remove('hidden');
-
             const activeButton = document.getElementById(`tab-button-${tabIndex}`);
             activeButton.classList.add('text-white', 'border-purple-400');
             activeButton.classList.remove('text-gray-400', 'border-transparent');
@@ -156,5 +175,3 @@
     </script>
 </body>
 </html>
-
-
